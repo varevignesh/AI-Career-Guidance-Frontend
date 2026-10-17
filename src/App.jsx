@@ -33,7 +33,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/interests"
+        "https://ai-career-guidance-backend-dsg3.onrender.com/api/interests"
       );
 
       if (!response.ok) {
@@ -108,7 +108,7 @@ function App() {
         .join("&");
 
       const response = await fetch(
-        `http://localhost:8080/api/recommendations?${query}`
+        `https://ai-career-guidance-backend-dsg3.onrender.com/api/recommendations?${query}`
       );
 
       if (!response.ok) {
@@ -145,7 +145,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/courses/${courseId}`
+        `https://ai-career-guidance-backend-dsg3.onrender.com/api/courses/${courseId}`
       );
 
       if (!response.ok) {
@@ -225,7 +225,7 @@ function App() {
           <div className="hero-card">
 
             <div className="card-icon">
-              🎯
+              ðŸŽ¯
             </div>
 
             <h2>
@@ -255,7 +255,7 @@ function App() {
             <div className="feature-card">
 
               <div className="feature-icon">
-                🧠
+                ðŸ§ 
               </div>
 
               <h3>
@@ -273,7 +273,7 @@ function App() {
             <div className="feature-card">
 
               <div className="feature-icon">
-                🎓
+                ðŸŽ“
               </div>
 
               <h3>
@@ -291,7 +291,7 @@ function App() {
             <div className="feature-card">
 
               <div className="feature-icon">
-                💼
+                ðŸ’¼
               </div>
 
               <h3>
@@ -308,7 +308,7 @@ function App() {
             <div className="feature-card">
 
               <div className="feature-icon">
-                🗺️
+                ðŸ—ºï¸
               </div>
 
               <h3>
@@ -373,7 +373,7 @@ function App() {
               setSelectedCourse(null)
             }
           >
-            ← Back to Recommendations
+            â† Back to Recommendations
           </button>
 
           <div className="course-details-header">
@@ -397,7 +397,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                ⏱ Duration
+                â± Duration
               </h3>
 
               <p>
@@ -410,7 +410,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                🎓 Eligibility
+                ðŸŽ“ Eligibility
               </h3>
 
               <p>
@@ -423,7 +423,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                🧠 Skills Required
+                ðŸ§  Skills Required
               </h3>
 
               <p>
@@ -436,7 +436,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                🚀 Future Scope
+                ðŸš€ Future Scope
               </h3>
 
               <p>
@@ -449,7 +449,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                💡 Why Is This Course Useful?
+                ðŸ’¡ Why Is This Course Useful?
               </h3>
 
               <p>
@@ -462,7 +462,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                🌍 Society Impact
+                ðŸŒ Society Impact
               </h3>
 
               <p>
@@ -475,7 +475,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                📚 Study Environment
+                ðŸ“š Study Environment
               </h3>
 
               <p>
@@ -488,7 +488,7 @@ function App() {
             <div className="detail-card">
 
               <h3>
-                💼 Work Environment
+                ðŸ’¼ Work Environment
               </h3>
 
               <p>
@@ -613,7 +613,7 @@ function App() {
 
                             {isSelected && (
                               <span className="check-mark">
-                                ✓
+                                âœ“
                               </span>
                             )}
 
@@ -806,7 +806,7 @@ function App() {
                       setError("");
                     }}
                   >
-                    ← Change Interests
+                    â† Change Interests
                   </button>
 
                 </div>
